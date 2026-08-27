@@ -2,96 +2,63 @@
 
 > **Learn Linux. Master the Terminal. Level Up.**
 
-**LEARN WITH N4MR3S — Linux Mastery** is a gamified, hands-on Linux learning program built for **beginners, freshers, and students starting their journey with Linux and cybersecurity**.
+**LEARN WITH N4MR3S — Linux Mastery** is a gamified, hands-on Linux learning program created for **beginners, freshers, and students starting their Linux and cybersecurity journey**.
 
-The project is designed around one simple idea:
+The goal is simple:
 
-> **Don't just read a command. Run it, observe it, understand it, and then use it to solve a task.**
+> **Don't just memorize commands. Run them, observe them, understand them, and use them to solve problems.**
 
-Instead of presenting Linux as a long list of commands to memorize, the program turns learning into a **50-level progression system**. Each level introduces a Linux or system concept, explains what it is used for, gives the learner a practical task, provides hints and command references, and uses a flag-based completion system to confirm that the task has been completed.
+The project combines a **50-level terminal-based learning game** with a **serverless web portal** for flag submission and progress tracking.
 
 ---
 
-# 🎯 Why LEARN WITH N4MR3S?
+# 🎯 What Is LEARN WITH N4MR3S?
 
-For a beginner, Linux can initially feel overwhelming:
+Linux is much easier to learn when you actually use it.
+
+This project turns Linux learning into a structured progression:
 
 ```text
-Commands
-Options
-Flags
-Directories
-Permissions
-Processes
-Networking
-Services
-Storage
-Containers
-Cloud
-Security
+📖 Learn the concept
+        ↓
+💻 Practice in another terminal
+        ↓
+🧪 Experiment with commands
+        ↓
+🎯 Complete the task
+        ↓
+🚩 Find the flag
+        ↓
+🌐 Open the portal
+        ↓
+📋 Submit the flag
+        ↓
+✅ Flag verified
+        ↓
+⭐ Earn XP + 🏆 Points
+        ↓
+🔓 Next level unlocked
 ```
 
-LEARN WITH N4MR3S breaks these concepts into a structured journey.
-
-The learner starts with basic terminal usage and gradually progresses toward more advanced Linux administration, networking, scripting, containers, infrastructure, and security topics.
-
-The focus is **learning by doing**.
+The levels are completed **sequentially**. Learners start from Level 1 and unlock the next level by successfully completing the current challenge.
 
 ---
 
-# 🧭 How the Learning Journey Works
+# ⚠️ IMPORTANT — LEARN BY DOING
 
-Every level follows a simple learning cycle:
+The game is designed to be used alongside a real Linux terminal.
 
-```text
-        📖 LEARN
-           │
-           ▼
-     🧠 UNDERSTAND
-           │
-           ▼
-     💻 EXPERIMENT
-           │
-           ▼
-      🎯 COMPLETE
-       THE TASK
-           │
-           ▼
-       🚩 FIND
-       THE FLAG
-           │
-           ▼
-      📋 SUBMIT
-       THE FLAG
-           │
-           ▼
-      ✅ VERIFIED
-           │
-           ▼
-     ⭐ XP + 🏆 POINTS
-           │
-           ▼
-      🔓 NEXT LEVEL
-```
+When a level introduces a command:
 
-The levels are completed **sequentially**. Learners begin at Level 1 and must complete the current level before progressing to the next one.
-
----
-
-# ⚠️ LEARN BY DOING
-
-One of the most important parts of the program is the learning workflow.
-
-When a level introduces a command, learners are encouraged to:
-
-1. Keep the game running.
-2. Open **another terminal**.
-3. Try the commands themselves.
-4. Experiment with available options, flags, and switches.
+1. Keep the learning game running.
+2. Open **another terminal window/tab**.
+3. Try the command yourself.
+4. Try its options, flags, or switches.
 5. Observe the output.
-6. Return to the game and complete the task.
+6. Understand what changed.
+7. Return to the game and complete the task.
 
-For example, if the lesson is about navigation:
+For example:
 
 ```bash
 pwd
@@ -100,282 +67,83 @@ cd ..
 pwd
 ```
 
-Don't just copy these commands.
+Don't simply copy commands.
 
-**Run them and observe what changes.**
-
-The objective is to understand:
+Ask yourself:
 
 ```text
-What does the command do?
+What does this command do?
 Why is it useful?
-What happens when an option is added?
-What does the output mean?
+What do its options/flags change?
+What does the output tell me?
 ```
 
-This approach helps learners build practical Linux knowledge rather than simply memorizing syntax.
+This project is intended to build **practical Linux knowledge**, not command memorization.
 
 ---
 
-# 🎮 The 50-Level Learning Path
-
-The current program contains **50 progressive Linux-focused levels**.
-
-## 🌱 Levels 1–14 — Linux Foundations
-
-The first section establishes the basic skills needed to work comfortably inside a Linux terminal.
-
-### 1. The Beginning
-Introduction to the Linux terminal and the basic idea of working from the command line.
-
-### 2. Navigation Master
-Learn how to move through the Linux filesystem using paths and navigation commands.
-
-### 3. Directory Creator
-Learn how directories are created and managed.
-
-### 4. File Creation
-Learn different ways to create files and use basic shell functionality.
-
-### 5. Viewing Files
-Learn how to inspect the contents of files from the terminal.
-
-### 6. Copy & Move
-Learn how to copy, move, and rename files and directories.
-
-### 7. Remove & Clean
-Understand how files and directories are removed safely.
-
-### 8. Wildcards & Patterns
-Learn shell wildcards and pattern matching for working with multiple files.
-
-### 9. Search with grep
-Learn how `grep` can search text and locate useful information inside files and command output.
-
-### 10. Find Files
-Learn how to locate files and directories using `find`.
-
-### 11. File Permissions
-Understand Linux permissions and how access to files and directories is controlled.
-
-### 12. Links & Shortcuts
-Learn about links and how Linux can reference files through different paths.
-
-### 13. I/O Redirection
-Learn standard input, standard output, standard error, pipes, and redirection.
-
-### 14. Text Processing
-Start processing command output and text using common Linux text-processing tools.
-
----
-
-# ⚙️ Levels 15–22 — System Administration Foundations
-
-After learning the basic shell and filesystem, the program moves into system-level concepts.
-
-### 15. Process Management
-Learn how Linux processes work and how to inspect and manage them.
-
-### 16. System Information
-Learn how to gather information about the operating system and running environment.
-
-### 17. Network Basics
-Introduction to networking concepts from a Linux command-line perspective.
-
-### 18. Advanced Processes
-Build on process management and learn more advanced ways to work with processes.
-
-### 19. Network Configuration
-Learn how Linux represents and configures network interfaces, routes, and related settings.
-
-### 20. Firewall Management
-Introduction to Linux firewall concepts and firewall-management tools.
-
-### 21. Systemd Mastery
-Learn about services, systemd, service management, and system logs.
-
-### 22. Package Management
-Learn how Linux packages are installed, updated, removed, and managed.
-
----
-
-# 💾 Levels 23–25 — Storage
-
-These levels introduce Linux storage administration.
-
-### 23. Disk Management
-Learn how disks, partitions, and filesystems are identified and managed.
-
-### 24. LVM Management
-Introduction to Logical Volume Management and flexible storage management.
-
-### 25. RAID Configuration
-Learn the concepts behind software RAID and storage redundancy/performance configurations.
-
----
-
-# 🔑 Levels 26–34 — Services, Servers & Scripting
-
-The learner now starts working with services and infrastructure commonly encountered in real Linux environments.
-
-### 26. SSH & Remote Access
-Learn how SSH provides secure remote command-line access and how remote connections are used.
-
-### 27. Web Server Administration
-Introduction to Linux web-server administration.
-
-### 28. Database Administration
-Introduction to administering databases from a Linux environment.
-
-### 29. Shell Scripting Basics
-Start automating repetitive Linux tasks with Bash.
-
-### 30. Advanced Scripting
-Build more advanced shell scripting and command-line automation skills.
-
-### 31. DNS & Bind
-Learn the basics of DNS services and DNS server administration.
-
-### 32. DHCP Server
-Understand DHCP and how network configuration can be provided automatically to clients.
-
-### 33. File Sharing
-Learn Linux-based file sharing concepts, including NFS and Samba.
-
-### 34. Backup & Recovery
-Learn tools and concepts used for creating backups and recovering data.
-
----
-
-# 🐳 Levels 35–38 — Containers & Kubernetes
-
-The program then introduces modern container infrastructure.
-
-### 35. Docker Introduction
-Learn what containers are and how Docker is used to run isolated applications.
-
-### 36. Advanced Docker
-Progress into Dockerfiles, container networking, volumes, and more advanced container concepts.
-
-### 37. Kubernetes Introduction
-Learn the basic concepts behind Kubernetes and container orchestration.
-
-### 38. Advanced Kubernetes
-Build on Kubernetes fundamentals and explore more advanced orchestration concepts.
-
----
-
-# ☁️ Levels 39–43 — DevOps, Cloud & Observability
-
-These levels introduce tools and concepts commonly used in modern infrastructure environments.
-
-### 39. CI/CD Pipeline
-Understand continuous integration and continuous delivery concepts.
-
-### 40. Cloud CLI Mastery
-Learn how command-line interfaces are used to interact with cloud environments.
-
-### 41. Infrastructure as Code
-Introduction to managing infrastructure through code and repeatable configurations.
-
-### 42. Monitoring & Alerting
-Learn why systems need monitoring and how alerts help identify problems.
-
-### 43. Logging & ELK Stack
-Understand centralized logging and the role of the ELK stack in collecting and analyzing logs.
-
----
-
-# 🛡️ Levels 44–50 — Advanced Linux & Mastery
-
-The final section brings together more advanced system concepts.
-
-### 44. Security Hardening
-Learn fundamental Linux security-hardening concepts.
-
-### 45. Performance Tuning
-Learn how system performance can be investigated and improved.
-
-### 46. Advanced Networking
-Build on networking fundamentals with more advanced Linux networking concepts.
-
-### 47. Virtualization
-Understand virtual machines and the role of virtualization in modern infrastructure.
-
-### 48. Automation Master
-Use automation to reduce repetitive administrative work.
-
-### 49. High Availability
-Introduction to designing systems that remain available when individual components fail.
-
-### 50. Ultimate Linux Master
-The final level brings together the skills developed throughout the 50-level journey.
-
----
-
-# 🚩 Flag-Based Progress
+# 🚩 HOW FLAGS WORK
 
 Each level has a corresponding flag.
 
-The flag is **not the lesson itself**. It acts as a completion checkpoint.
+The flag is a **completion checkpoint** for the practical task.
 
-The intended workflow is:
+### The correct workflow is:
 
 ```text
-Complete the practical task
-          ↓
-Discover the flag
-          ↓
+Complete the task
+      ↓
+Find the flag
+      ↓
 Copy the flag
-          ↓
-Open the portal
-          ↓
-Paste the flag
-          ↓
+      ↓
+Open LEARN WITH N4MR3S Portal
+      ↓
+Paste the flag into "Submit Flag"
+      ↓
 Submit
-          ↓
+      ↓
 Level completed
+      ↓
+Next level unlocked
 ```
 
-### Important
+### ❗ Do NOT paste the flag into the game terminal.
 
-**Do not paste the flag into the Linux command prompt.**
+The game terminal is where you **perform the Linux task**.
 
-The terminal is where you perform the task and learn the command.
-
-The **LEARN WITH N4MR3S Portal** is where you submit the flag.
+The **web portal is where you submit the flag**.
 
 ---
 
-# 🌐 LEARN WITH N4MR3S Portal
+# 🌐 LEARN WITH N4MR3S PORTAL
 
-The project includes a lightweight learning portal designed to complement the terminal-based game.
+The repository contains a browser-based learning portal.
 
-The portal provides a visual way to track the learner's journey.
+The portal is used to:
 
-It can display information such as:
+- 📊 Track learning progress
+- 📚 View levels
+- 🔒 See locked levels
+- ✅ See completed levels
+- 🚩 Submit discovered flags
+- ⭐ Track XP
+- 🏆 Track points
+- 🔥 Track streaks
+- 📈 View accuracy
+- 🏅 View achievements
 
-- 📊 Overall progress
-- 📚 Current level
-- ✅ Completed levels
-- 🔒 Locked levels
-- ⭐ XP
-- 🏆 Points
-- 🔥 Streak
-- 📈 Accuracy
-- 🏅 Achievements
-- 🚩 Flag submission
-- 📖 Challenge information
+The portal is **serverless** and does not require a database.
 
 ---
 
-# 🖥️ Running the Game
+# 🚀 QUICK START
 
 ## Requirements
 
 You need:
 
-- A Linux system
+- Linux
 - Python 3
 - A modern web browser
 
@@ -387,12 +155,10 @@ python3 --version
 
 ---
 
-# 📥 Installation
-
-Clone the repository:
+## 1️⃣ Clone the Repository
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY>
+git clone https://github.com/sserman006-spec/LEARN-WITH-N4MR3S-Linux-Mastery.git
 ```
 
 Enter the project:
@@ -403,7 +169,7 @@ cd LEARN-WITH-N4MR3S-Linux-Mastery
 
 ---
 
-# ▶️ Start the Learning Game
+## 2️⃣ Start the Learning Game
 
 Run:
 
@@ -416,16 +182,48 @@ The terminal game will start.
 Choose:
 
 ```text
-1. 🆕 Start New Game
+🆕 Start New Game
 ```
 
-Enter your name and begin from Level 1.
+Enter your name and begin from **Level 1**.
 
 ---
 
-# 🌐 Host the Portal Locally
+# 🎮 USING THE GAME
 
-The portal can be hosted locally from the game.
+Every level contains learning information and a practical task.
+
+A typical level includes:
+
+```text
+📚 Level
+📖 What you're learning
+🎯 Objective
+💡 Hints
+🔧 Command reference
+📌 Practical task
+🚩 Flag
+```
+
+Useful built-in commands include:
+
+```text
+help
+hint
+ref <tool>
+status
+quit
+```
+
+Use these resources before asking an external platform how a command works.
+
+The purpose of the project is to make the game itself useful as a learning resource.
+
+---
+
+# 🌐 HOST THE PORTAL LOCALLY
+
+The game includes an option to host the portal locally.
 
 Start the game:
 
@@ -433,23 +231,85 @@ Start the game:
 python3 learn_with_n4mr3s.py
 ```
 
-From the menu, select:
+From the main menu, choose:
 
 ```text
 🌐 Host LEARN WITH N4MR3S Portal Locally
 ```
 
-The portal will be hosted on your own computer and can be opened in your browser.
+The game will start a local web server and provide a local address for the portal.
 
-No external backend is required.
+Open that address in your browser.
 
 ---
 
-# 💾 How Progress Is Stored
+# 🚩 SUBMITTING A FLAG
 
-The project is designed so that the learning portal can operate without a database or backend.
+After discovering a flag:
 
-Portal progress is stored using the browser's:
+### Step 1 — Copy the flag
+
+Example:
+
+```text
+CTF{example_flag}
+```
+
+### Step 2 — Open the portal
+
+Use:
+
+```text
+🌐 Host LEARN WITH N4MR3S Portal Locally
+```
+
+from the game menu.
+
+### Step 3 — Open your current level
+
+Find the level you are currently solving.
+
+### Step 4 — Submit the flag
+
+Use the portal's:
+
+```text
+🚩 Submit Flag
+```
+
+field.
+
+Paste the flag and click:
+
+```text
+SUBMIT
+```
+
+### Step 5 — Continue
+
+If the flag is correct, the portal will mark the level as completed and unlock the next stage.
+
+---
+
+# 🌍 ONLINE PORTAL — GITHUB PAGES
+
+The web portal is also published as a static GitHub Pages site.
+
+**LEARN WITH N4MR3S Portal:**
+
+https://sserman006-spec.github.io/LEARN-WITH-N4MR3S-Linux-Mastery/
+
+The online portal is useful for viewing the learning interface and progress features.
+
+For the complete local learning experience, run the Python game and use its local portal option.
+
+---
+
+# 💾 PROGRESS TRACKING
+
+The portal does not use a remote database.
+
+Progress is stored locally in the browser using:
 
 ```text
 localStorage
@@ -458,39 +318,26 @@ localStorage
 Conceptually:
 
 ```text
-Your Browser
-     │
-     ▼
+Browser
+   ↓
 localStorage
-     │
-     ▼
-Your Learning Progress
+   ↓
+Your progress
 ```
 
-This means students can use the portal without creating an online account.
+This means each learner can maintain their own progress without creating an online account.
 
-Progress is local to the browser/device.
+### Progress is local to:
 
-### Progress will normally remain when you:
+- Your browser
+- Your device
+- Your browser's stored site data
 
-- Refresh the page
-- Close the browser
-- Restart the computer
-- Open the portal again
-
-### Progress can be lost if:
-
-- Browser site data is cleared
-- Local browser storage is deleted
-- The learner switches to another browser/device without transferring their backup
+Clearing the browser's site data can remove locally stored progress.
 
 ---
 
-# 📤 Export & Import Progress
-
-The portal provides progress backup functionality.
-
-### Export
+# 📤 EXPORT & IMPORT PROGRESS
 
 Use:
 
@@ -498,9 +345,7 @@ Use:
 📤 Export Progress
 ```
 
-to save a backup of your current progress.
-
-### Import
+to create a backup of your progress.
 
 Use:
 
@@ -508,19 +353,127 @@ Use:
 📥 Import Progress
 ```
 
-to restore previously exported progress.
+to restore a previously exported backup.
 
-This is useful when moving to another computer.
+This is useful when changing computers or browsers.
 
 ---
 
-# 📁 Repository Structure
+# 📚 50-LEVEL LEARNING PATH
+
+The 50 levels progress from Linux fundamentals to advanced administration, infrastructure, automation, and security concepts.
+
+## 🐧 Linux Foundations
+
+- Terminal basics
+- Filesystem navigation
+- Directory creation
+- File creation
+- Reading files
+- Copying and moving files
+- Removing files
+- Wildcards and patterns
+- `grep`
+- `find`
+- File permissions
+- Links
+- Pipes and redirection
+- Text processing
+
+## ⚙️ System Administration
+
+- Process management
+- System information
+- Advanced processes
+- Network configuration
+- Firewall management
+- systemd
+- Package management
+
+## 💾 Storage
+
+- Disk management
+- LVM
+- RAID
+
+## 📡 Networking & Services
+
+- SSH
+- Remote access
+- Web servers
+- Databases
+- DNS
+- DHCP
+- NFS
+- Samba
+
+## 📜 Scripting & Automation
+
+- Bash scripting
+- Advanced shell scripting
+- Automation
+- Text processing
+
+## 🐳 Containers & Orchestration
+
+- Docker
+- Advanced Docker
+- Kubernetes
+- Advanced Kubernetes
+
+## ☁️ DevOps, Cloud & Infrastructure
+
+- CI/CD
+- Cloud CLI
+- Infrastructure as Code
+- Monitoring
+- Alerting
+- Logging
+- ELK stack
+
+## 🛡️ Advanced Linux & Security
+
+- Security hardening
+- Performance tuning
+- Advanced networking
+- Virtualization
+- Automation
+- High availability
+- Final Linux mastery challenge
+
+---
+
+# 🏆 GAMIFICATION
+
+The program turns learning into a progression system.
+
+Learners can earn:
+
+```text
+⭐ XP
+🏆 Points
+🔥 Streaks
+🏅 Achievements
+📊 Accuracy
+📈 Progress
+🚩 Completed flags
+```
+
+The objective is not to rush through the levels.
+
+The objective is to **understand the concepts and build practical skill**.
+
+---
+
+# 📁 PROJECT STRUCTURE
+
+The repository is intentionally kept as a **single repository**.
 
 ```text
 LEARN-WITH-N4MR3S-Linux-Mastery/
 │
 ├── README.md
-│
+├── index.html
 ├── learn_with_n4mr3s.py
 │
 └── portal/
@@ -532,43 +485,54 @@ LEARN-WITH-N4MR3S-Linux-Mastery/
 
 ### `learn_with_n4mr3s.py`
 
-The main terminal-based 50-level Linux learning program.
+The main terminal-based Linux learning game.
+
+### `index.html`
+
+The GitHub Pages entry point that directs visitors to the portal.
 
 ### `portal/index.html`
 
-The main portal webpage.
+The main learning portal page.
 
 ### `portal/style.css`
 
-Visual styling for the portal.
+Portal styling and user interface design.
 
 ### `portal/app.js`
 
-Portal logic, progress tracking, flag submission, and local storage handling.
+Portal functionality, progress handling, flag submission, and local storage.
 
 ### `portal/challenges.js`
 
-Challenge information used by the portal.
+Challenge and level information used by the portal.
 
 ---
 
-# 🌐 GitHub Pages
+# 🌐 GITHUB PAGES ARCHITECTURE
 
-The portal is made using standard web technologies:
+The public portal works through a simple static structure:
 
 ```text
-HTML
-CSS
-JavaScript
+GitHub Pages
+     │
+     ▼
+index.html
+     │
+     ▼
+portal/
+     │
+     ├── index.html
+     ├── style.css
+     ├── app.js
+     └── challenges.js
 ```
 
-Therefore, the portal can also be published as a static website using GitHub Pages.
-
-The Python learning game remains a local program, while the portal can be accessed through a web browser.
+No backend server is required for the public portal.
 
 ---
 
-# 🧑‍🎓 Who Should Use This?
+# 🧑‍🎓 WHO IS THIS FOR?
 
 LEARN WITH N4MR3S is intended for:
 
@@ -576,42 +540,41 @@ LEARN WITH N4MR3S is intended for:
 - College students
 - Freshers
 - Cybersecurity beginners
+- CTF beginners
 - Students preparing for cybersecurity labs
-- CTF beginners who need stronger Linux foundations
 - Students interested in system administration
 - Anyone who wants practical Linux experience
 
 ---
 
-# 🧠 Learning Philosophy
+# 🧠 LEARNING PHILOSOPHY
 
-This project follows a simple principle:
+The project follows:
 
-> **Understanding is more valuable than memorization.**
+> **Understand → Experiment → Practice → Solve → Discover → Progress**
 
-When learning a command, don't stop at:
+When you learn a command, don't stop at its syntax.
 
-```text
-"What is the syntax?"
-```
-
-Also ask:
+Understand:
 
 ```text
-"What does it actually do?"
-"Why would I use it?"
-"What happens with different options?"
-"What does the output tell me?"
-"Can I solve a real problem with it?"
+What does it do?
+Why is it useful?
+What are its options?
+What are its flags?
+What happens when the input changes?
+What does the output mean?
 ```
 
-That is why learners are encouraged to keep another terminal open and experiment while progressing through the game.
+The second terminal is an important part of the learning process.
+
+**Experiment. Break things safely. Observe. Learn.**
 
 ---
 
-# ⚠️ Safety & Lab Environment
+# ⚠️ SAFETY NOTICE
 
-Some advanced Linux topics involve commands that can modify:
+Some advanced Linux commands can modify:
 
 - Files
 - Filesystems
@@ -621,114 +584,69 @@ Some advanced Linux topics involve commands that can modify:
 - Services
 - System configuration
 
-Beginners should **not blindly execute potentially destructive commands on an important personal system**.
+Do not blindly execute potentially destructive commands on an important personal system.
 
-For advanced levels, use a dedicated:
+For advanced topics, use a:
 
 ```text
 Virtual Machine
 ```
 
-or another isolated lab environment whenever appropriate.
+or another dedicated lab environment whenever possible.
 
-Always understand a command before executing it with elevated privileges.
-
----
-
-# 🏗️ Project Design
-
-The project intentionally separates the two learning components:
-
-```text
-             LEARN WITH N4MR3S
-                    │
-          ┌─────────┴─────────┐
-          │                   │
-          ▼                   ▼
-   🐧 Terminal Game      🌐 Web Portal
-          │                   │
-          │                   │
-   Learn + Practice      Track Progress
-   Complete Tasks        Submit Flags
-   Discover Flags        View Statistics
-          │                   │
-          └─────────┬─────────┘
-                    │
-                    ▼
-             Learner's Journey
-```
-
-The terminal game is the **hands-on learning environment**.
-
-The portal is the **visual progress and flag-submission interface**.
+Always understand commands before using elevated privileges such as `sudo`.
 
 ---
 
-# 🛣️ Future Direction
+# 🤝 CONTRIBUTING
 
-LEARN WITH N4MR3S currently focuses on building a strong Linux foundation.
+Suggestions, improvements, educational content, and bug reports are welcome.
 
-The broader learning ecosystem can eventually expand into dedicated cybersecurity learning tracks such as:
+You can contribute by:
+
+- Reporting bugs
+- Improving explanations
+- Improving challenge instructions
+- Adding beginner-friendly examples
+- Suggesting missing Linux topics
+- Improving the portal
+- Submitting pull requests
+
+---
+
+# 🛣️ FUTURE LEARNING PATH
+
+The Linux program can serve as the foundation for broader cybersecurity learning.
+
+Possible future domains include:
 
 ```text
-🐧 Linux
-📡 Networking
-🌐 Web Security
+🌐 Web Exploitation
 🔐 Cryptography
 🔎 Digital Forensics
 🖼️ Steganography
 🌍 OSINT
 🔬 Reverse Engineering
-💥 Binary Exploitation
+💥 Pwn / Binary Exploitation
+🐧 Linux
 🪟 Windows
 🏢 Active Directory
+📡 Networking
 📦 Malware Analysis
-📱 Mobile Security
+🧠 Mobile Security
 ☁️ Cloud Security
+🔑 Authentication & JWT
+🗄️ Database Security
+📱 Android
+🍎 iOS
+⛓️ Blockchain / Web3
 🤖 AI Security
 🔗 Hardware / IoT
+🧩 Miscellaneous
 🏆 Mixed CTF Challenges
 ```
 
-The existing 50-level Linux program serves as the **foundation** for that journey.
-
----
-
-# 🤝 Contributing
-
-Contributions, improvements, suggestions, and educational content are welcome.
-
-If you find:
-
-- A bug
-- An incorrect explanation
-- A confusing task
-- A command that needs better explanation
-- A useful beginner topic that is missing
-
-feel free to open an issue or submit a pull request.
-
----
-
-# 📜 Project Goal
-
-The purpose of LEARN WITH N4MR3S is simple:
-
-> **Make Linux less intimidating for beginners by turning learning into a practical, progressive, and engaging experience.**
-
-Learn the concept.
-
-Open another terminal.
-
-Experiment.
-
-Complete the task.
-
-Find the flag.
-
-Submit it.
-
-Level up.
+These are potential extensions to the learning ecosystem; the current repository is focused on the **Linux Mastery** track.
 
 ---
 
@@ -736,4 +654,16 @@ Level up.
 
 ## **Learn Linux. Master the Terminal. Level Up.**
 
-Built for learners who want to **understand Linux by using it**.
+Built to help beginners move from:
+
+```text
+"I don't know Linux"
+```
+
+to:
+
+```text
+"I understand what I'm doing in the terminal."
+```
+
+**Learn. Experiment. Solve. Discover. Progress.**
