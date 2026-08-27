@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LEARN WITH N4MR3S — Linux Mastery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <div class="brand">🏴 LEARN WITH N4MR3S</div>
+    <div class="tag">🐧 Linux Mastery · 50-Level Learning Journey</div>
+  </div>
+  <div class="player"><input id="name" placeholder="Your name" maxlength="30"><button id="saveName">Save</button></div>
+</header>
+
+<main>
+  <aside>
+    <section class="card">
+      <h2>📊 Progress</h2>
+      <div id="stats"></div>
+      <div class="bar"><span id="bar"></span></div>
+    </section>
+    <section class="card">
+      <h2>🗺️ Learning Path</h2>
+      <p class="muted">Complete each level in order.</p>
+      <div id="levels"></div>
+    </section>
+    <section class="card tools">
+      <button id="export">📤 Export Progress</button>
+      <label>📥 Import Progress <input id="import" type="file" accept=".json"></label>
+      <button id="reset" class="danger">🔄 Reset</button>
+    </section>
+  </aside>
+
+  <section id="main" class="card"></section>
+</main>
+
+<script src="challenges.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
