@@ -1875,9 +1875,25 @@ class CTFGame:
             def log_message(self, format, *args):
                 pass
 
-        # Let the OS choose an available local port.
-        server = ThreadingHTTPServer(("127.0.0.1", 0), QuietHandler)
-        server_port = server.server_address[1]
+        # Use a fixed local port so the browser keeps the same origin.
+        # localStorage is origin-specific, and the port is part of the origin.
+        # Using a random port (0) would create a new storage area on every run.
+        server_port = 8000
+
+        try:
+            server = ThreadingHTTPServer(("127.0.0.1", server_port), QuietHandler)
+        except OSError as e:
+            self.print_colored(
+                f"\n❌ Could not start the portal on port {server_port}.",
+                Colors.RED,
+                True
+            )
+            print("The fixed portal port may already be in use.")
+            print(f"Try: lsof -i :{server_port}")
+            print(f"Then stop the process if appropriate, and run the game again.")
+            print(f"Error: {e}")
+            input("Press Enter to continue...")
+            return
 
         # SimpleHTTPRequestHandler serves from the process cwd by default.
         # Change only for the server thread, then restore it after shutdown.
